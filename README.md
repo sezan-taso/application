@@ -26,3 +26,13 @@ git clone https://gitlab.com/progress-all/piita.git
 cd piita
 code .
 ```
+
+# 開発方法
+## データの準備
+```
+docker-compose run --rm flyway-clean
+docker-compose run --rm flyway-migrate
+```
+
+## POSTGRESへのログイン
+docker exec -it application-database-1 psql -U postgres -d application
