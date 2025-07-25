@@ -28,10 +28,11 @@ code .
 ```
 
 # 開発方法
-## データの準備
+## データ、マッパーの準備
 ```
 docker-compose run --rm flyway-clean
 docker-compose run --rm flyway-migrate
+docker compose run --rm backend ./gradlew mbGenerator
 ```
 
 ## POSTGRESへのログイン
