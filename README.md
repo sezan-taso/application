@@ -36,3 +36,8 @@ docker-compose run --rm flyway-migrate
 
 ## POSTGRESへのログイン
 docker exec -it application-database-1 psql -U postgres -d application
+
+## gradlewのビルド
+```
+docker-compose run --rm gradle-build
+```
