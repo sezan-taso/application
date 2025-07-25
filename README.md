@@ -36,7 +36,9 @@ docker compose run --rm backend ./gradlew mbGenerator
 ```
 
 ## POSTGRESへのログイン
+```
 docker exec -it application-database-1 psql -U postgres -d application
+```
 
 ## gradlewのビルド
 ```
